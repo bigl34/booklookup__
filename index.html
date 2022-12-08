@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" href="/icon-128.png" />
     <link rel="stylesheet" href="runtime/pyscript.css" />
     <script defer src="runtime/pyscript.js"></script>
+        <py-env>
+    - libgen_api
+        </py-env>
   </head>
   <body>
     <script>
@@ -24,9 +27,7 @@
     </script>
     <br>
 <!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
-<py-env>
-  
-</py-env>
+
 <py-script>
 from libgen_api import LibgenSearch
 s = LibgenSearch()
