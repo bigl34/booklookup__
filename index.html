@@ -16,7 +16,12 @@
   </head>
   <body>
     Hello world!<br>
-    <script src="script.js"></script>
+    <script>
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+    let url = tabs[0].url;
+    // use `url` here inside the callback because it's asynchronous!
+    });
+    </script>
 <!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
 <py-script>
 from js import url
