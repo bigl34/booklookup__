@@ -1,6 +1,6 @@
 {
-  "name": "PyScript Template",
-  "description": "Write Chrome Extensions in Python using PyScript",
+  "name": "BookLookup",
+  "description": "Get libgen links of books on amazon",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
