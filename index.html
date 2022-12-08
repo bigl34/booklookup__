@@ -18,11 +18,12 @@
     Hello world!<br>
 <!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
 <py-script>
-from datetime import datetime
-
-print("This is the current date and time, as computed by Python:")
-now = datetime.now()
-now.strftime("%m/%d/%Y, %H:%M:%S")
+from libgen_api import LibgenSearch
+s = LibgenSearch()
+results = s.search_author("Jane Austen")
+item_to_download = results[0]
+download_links = s.resolve_download_links(item_to_download)
+print(download_links)
 </py-script>
   </body>
   <script src="finished.js"></script>
