@@ -15,13 +15,13 @@
     <script defer src="runtime/pyscript.js"></script>
   </head>
   <body>
-    Hello world!<br>
     <script>
     chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     let url = tabs[0].url;
     // use `url` here inside the callback because it's asynchronous!
     });
     </script>
+    url<br>
 <!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
 <py-script>
 from js import url
